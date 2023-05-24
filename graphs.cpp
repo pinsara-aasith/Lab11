@@ -7,7 +7,7 @@ struct Node
 {
 
 public:
-    int label;
+    int lbl;
     vector<int> neighbours;
     // A node will 2 entities
     // 1. data type int called label
@@ -24,7 +24,7 @@ struct Graph
         // iterate through the nodes and assign labels
         for (int i = 0; i < n; i++)
         {
-            nodes[i].label = i + 1;
+            nodes[i].lbl = i + 1;
         }
     }
 
@@ -32,7 +32,7 @@ struct Graph
     {
         for (int i = 0; i < n; i++)
         {
-            if (nodes[i].label == label)
+            if (nodes[i].lbl == label)
                 return &nodes[i];
         }
 
